@@ -4,20 +4,22 @@
     max-width: 800px;
     grid-template-columns: repeat(5, 1fr);
     gap: 15px;
-    margin: 100px auto;
-}
+    margin: 100px auto;}
+
 .card{
     aspect-ratio: 3/4;
     width: 100%;
-    background-color: #333;
     border-radius: 5px;
     position: relative;
     transition: all 400ms ease;
-    transform-style: preserve-3d;
-}
-.card:hover{
-    transform: rotateY(180deg);
-}
+    transform-style: preserve-3d;}
+
+.reveal-card{
+    transform: rotateY(180deg);}
+
+.disabled-card{
+    filter: saturate(0);
+    opacity: 0.5;}
 
 .face{
     width: 100%;
@@ -27,7 +29,7 @@
     background-position: center;
     border: 2px solid #39813a;
     border-radius: 5px;
-}
+    transition: all 400ms;}
 
 .front{transform: rotateY(180deg);}
 
