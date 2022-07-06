@@ -18,7 +18,7 @@ const handleSubmit = (event) => {
     
     event.preventDefault();// esse comando desativa o comportamento padrão do formúlario
     
-    localStorage.setItem('player', input.value);
+    localStorage.setItem('player', input.value);// setando a chave 'player' + o valor digitado pelo usario no localStorage 
     window.location = 'pages/game.html';
 }
 
